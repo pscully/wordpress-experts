@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "type": "instance",
+      "subtype": "app-instance",
+      "componentId": "app",
+      "id": 4010090,
+      "isVisible": true,
+      "children": []
+    }
+  ],
+  "components": [
+    {
+      "id": "app",
+      "type": "component",
+      "subtype": "app-component",
+      "globalStyle": "// COLORS\n$primary: #00d1b2;\n$info: #209CEE;\n$success: #23D160;\n$warning: #FFDD57;\n$danger: #FF3860;\n$light: #F5F5F5;\n$dark: #363636;\n\n// TEXT\n$text: #4A4A4A;\n$link: #3273DC;\n$body-family: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif;\n$title-family: false;\n$button-family: false;\n\n// BREAKPOINTS\n$gap: 32px;\n$tablet: 769px;\n$desktop: 960px + (2*$gap);\n$widescreen: 1152px + (2*$gap);\n$fullhd: 1344px + (2*$gap);\n$widescreen-enabled: true;\n$fullhd-enabled: false;\n\n// LAYOUT\n$section-padding: 3rem 1.5rem;\n$section-padding-medium: 6rem 1.5rem;\n$section-padding-large: 9rem 1.5rem;\n\n// SPACING HELPERS (.mt-3, .mx-auto, .p-5, etc)\n$spacing-shortcuts: (\"margin\": \"m\", \"padding\": \"p\");\n$spacing-directions: (\"top\": \"t\", \"right\": \"r\", \"bottom\": \"b\", \"left\": \"l\");\n$spacing-horizontal: \"x\";\n$spacing-vertical: \"y\";\n$spacing-values: (\"0\": 0, \"1\": 0.25rem, \"2\": 0.5rem, \"3\": 1rem, \"4\": 1.5rem, \"5\": 3rem, \"auto\": auto);\n\n// SEE DOCS FOR MORE: \n// https://bit.ly/30UvE5O\n\n// IMPORT BULMA\n@import \"~bulma/bulma.sass\";",
+      "isVisible": true,
+      "code": "",
+      "kit": null,
+      "muiTheme": "{\n\n}",
+      "children": []
+    }
+  ]
+}
