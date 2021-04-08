@@ -67,7 +67,7 @@ const Header = () => {
             <div className='relative'>
               <button
                 type='button'
-                className='text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+                className='text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue'
                 aria-expanded='false'
                 onClick={() => handleFlyoutMenu()}>
                 <span>Services</span>
@@ -96,7 +96,7 @@ const Header = () => {
                     <a
                       href='#'
                       className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-600 to-blue-800 text-white sm:h-12 sm:w-12'>
+                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
                         <svg
                           className='h-6 w-6'
                           xmlns='http://www.w3.org/2000/svg'
@@ -121,7 +121,7 @@ const Header = () => {
                     <a
                       href='#'
                       className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-600 to-blue-800 text-white sm:h-12 sm:w-12'>
+                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
                         <svg
                           className='h-6 w-6'
                           xmlns='http://www.w3.org/2000/svg'
@@ -146,7 +146,7 @@ const Header = () => {
                     <a
                       href='#'
                       className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-600 to-blue-800 text-white sm:h-12 sm:w-12'>
+                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
                         <svg
                           className='h-6 w-6'
                           xmlns='http://www.w3.org/2000/svg'
@@ -171,7 +171,7 @@ const Header = () => {
                     <a
                       href='#'
                       className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-600 to-blue-800 text-white sm:h-12 sm:w-12'>
+                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
                         <svg
                           className='h-6 w-6'
                           xmlns='http://www.w3.org/2000/svg'

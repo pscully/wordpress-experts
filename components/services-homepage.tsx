@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Button from "./button";
 
 const ServicesHomepage = () => {
@@ -11,7 +10,7 @@ const ServicesHomepage = () => {
           <div className='px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0'>
             <div>
               <div>
-                <span className='h-12 w-12 rounded-md flex items-center justify-center bg-brand-blue p-2'>
+                <span className='h-12 w-12 rounded-md flex items-center justify-center bg-gray-900 p-2'>
                   {/* Heroicon name: outline/inbox */}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -41,7 +40,7 @@ const ServicesHomepage = () => {
                   Our white-glove managed WordPress service is the perfect home
                   for your website. Never worry about updates, plugins, broken
                   images or links ever again. We provide the best in technology
-                  + the best in people. That's a winning combination that let's
+                  + the best in people. That's a winning combination that lets
                   you focus on what you love, and leave the day-to-day stresses
                   of your website to us.
                 </p>
@@ -94,7 +93,7 @@ const ServicesHomepage = () => {
           <div className='px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2'>
             <div>
               <div>
-                <span className='h-12 w-12 rounded-md flex items-center justify-center bg-brand-blue p-2'>
+                <span className='h-12 w-12 rounded-md flex items-center justify-center bg-gray-900 p-2'>
                   {/* Heroicon name: outline/sparkles */}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

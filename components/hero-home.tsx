@@ -11,7 +11,7 @@ const HeroHome = () => {
               alt='People working on laptops'
             />
             <div
-              className='absolute inset-0 bg-blue-500'
+              className='absolute inset-0 bg-gray-700'
               style={{ mixBlendMode: "multiply" }}
             />
           </div>
@@ -21,9 +21,9 @@ const HeroHome = () => {
               {/* <span className='block text-blue-200'>WordPress.</span> */}
             </h1>
             <p className='mt-6 max-w-lg mx-auto text-center text-xl text-white sm:max-w-3xl'>
-              We care for your website like we wish someone would care for ours.
-              Get more traffic to your ( now awesome ) site with our organic
-              Internet marketing services.
+              We CARE for your website like we wish someone would care for ours.
+              Then GROW exponentially online with our organic Internet marketing
+              service.
             </p>
             <div className='mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center'>
               <div className='space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5'>
