@@ -25,7 +25,8 @@ const HeroHome = () => {
             </h1>
             <p className='mt-6 max-w-lg mx-auto text-center text-xl text-white sm:max-w-3xl'>
               We CARE for your website like we wish someone would care for ours.
-              Then GROW exponentially online with our organic Internet marketing
+              <br />
+              GROW exponentially online with our organic Internet marketing
               service.
             </p>
             <div className='mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center'>
