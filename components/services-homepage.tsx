@@ -1,4 +1,5 @@
 import Button from "./button";
+import Image from "next/image";
 
 const ServicesHomepage = () => {
   return (
@@ -63,10 +64,12 @@ const ServicesHomepage = () => {
                 <footer className='mt-3'>
                   <div className='flex items-center space-x-3'>
                     <div className='flex-shrink-0'>
-                      <img
+                      <Image
+                        height={25}
+                        width={25}
                         className='h-6 w-6 rounded-full'
                         src='/assets/reviews/malvehy.jpg'
-                        alt=''
+                        alt='Possible Web Review'
                       />
                     </div>
                     <div className='text-base font-medium text-gray-700'>
@@ -139,10 +142,12 @@ const ServicesHomepage = () => {
                 <footer className='mt-3'>
                   <div className='flex items-center space-x-3'>
                     <div className='flex-shrink-0'>
-                      <img
+                      <Image
+                        height={25}
+                        width={25}
                         className='h-6 w-6 rounded-full'
                         src='https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
-                        alt=''
+                        alt='Possible Web Review'
                       />
                     </div>
                     <div className='text-base font-medium text-gray-700'>
