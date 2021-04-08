@@ -81,7 +81,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <p className='mt-8 text-center text-base text-gray-400'>
+        <p className='mt-8 text-center text-base text-gray-800'>
           © {currentYear} Possible Web, Inc. All rights reserved.
         </p>
       </div>
