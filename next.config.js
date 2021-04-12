@@ -9,6 +9,6 @@ module.exports = {
     return config;
   },
   images: {
-    domains: ['files.possibleweb.com'],
+    domains: ['files.possibleweb.com', 'images.unsplash.com'],
   },
 };

@@ -20,7 +20,7 @@ const DesktopLogo = () => {
 const MobileLogo = () => {
   return (
     <Image
-      width={50}
+      width={64}
       height={50}
       src='https://files.possibleweb.com/file/01brands/cyclone-copy.png'
       alt='Possible Web Cyclone Logo'

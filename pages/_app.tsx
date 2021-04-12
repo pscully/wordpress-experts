@@ -1,6 +1,7 @@
 import { AppProps } from "next/app";
 import "../styles/index.css";
 import { GlobalStyles } from "twin.macro";
+import Layout from "../components/layout";
 // import "../util/analytics";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -11,8 +12,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <div>
-        <GlobalStyles />
-        <Component {...pageProps} />
+        <Layout>
+          <GlobalStyles />
+          <Component {...pageProps} />
+        </Layout>
       </div>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>

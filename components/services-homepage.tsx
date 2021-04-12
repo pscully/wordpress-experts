@@ -1,12 +1,17 @@
 import Button from "./button";
+import Image from "next/image";
 
-const ServicesHomepage = () => {
+type Props = {
+  buttonClickFunc: Function;
+};
+
+const ServicesHomepage = ({ buttonClickFunc }: Props) => {
   return (
     <div
       className='relative bg-white pt-16 pb-32 overflow-hidden'
       id='more-info'>
       <div className='relative'>
-        <div className='lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24'>
+        <div className='lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24 lg:flex '>
           <div className='px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0'>
             <div>
               <div>
@@ -45,7 +50,11 @@ const ServicesHomepage = () => {
                   of your website to us.
                 </p>
                 <div className='mt-6'>
-                  <Button text='Learn About CARE' />
+                  <Button
+                    type='button'
+                    text='Learn About CARE'
+                    clickFunc={buttonClickFunc}
+                  />
                 </div>
               </div>
             </div>
@@ -63,10 +72,12 @@ const ServicesHomepage = () => {
                 <footer className='mt-3'>
                   <div className='flex items-center space-x-3'>
                     <div className='flex-shrink-0'>
-                      <img
+                      <Image
+                        height={25}
+                        width={25}
                         className='h-6 w-6 rounded-full'
                         src='/assets/reviews/malvehy.jpg'
-                        alt=''
+                        alt='Possible Web Review'
                       />
                     </div>
                     <div className='text-base font-medium text-gray-700'>
@@ -77,10 +88,12 @@ const ServicesHomepage = () => {
               </blockquote>
             </div>
           </div>
-          <div className='mt-12 sm:mt-16 lg:mt-0'>
-            <div className='pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full'>
-              <img
-                className='w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none'
+          <div className='lg:flex-shrink-0'>
+            <div className=''>
+              <Image
+                height='350px'
+                width='560px'
+                className='rounded-xl shadow-xl md:mt-32 sm:mt-4'
                 src='/assets/care.jpg'
                 alt='Inbox user interface'
               />
@@ -101,9 +114,9 @@ const ServicesHomepage = () => {
                     viewBox='0 0 24 24'
                     stroke='white'>
                     <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='2'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
                       d='M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'
                     />
                   </svg>
@@ -139,10 +152,12 @@ const ServicesHomepage = () => {
                 <footer className='mt-3'>
                   <div className='flex items-center space-x-3'>
                     <div className='flex-shrink-0'>
-                      <img
+                      <Image
+                        height={25}
+                        width={25}
                         className='h-6 w-6 rounded-full'
                         src='https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
-                        alt=''
+                        alt='Possible Web Review'
                       />
                     </div>
                     <div className='text-base font-medium text-gray-700'>
@@ -155,11 +170,11 @@ const ServicesHomepage = () => {
           </div>
           <div className='mt-12 sm:mt-16 lg:mt-0 lg:col-start-1'>
             <div className='pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full'>
-              <img
+              {/* <img
                 className='w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none'
                 src='/assets/grow.jpg'
                 alt='Customer profile user interface'
-              />
+              /> */}
             </div>
           </div>
         </div>
