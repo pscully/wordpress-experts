@@ -93,31 +93,34 @@ const Header = () => {
                 }>
                 <div className='rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden'>
                   <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2'>
-                    <a
-                      href='#'
-                      className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
-                        <svg
-                          className='h-6 w-6'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          aria-hidden='true'>
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth={2}
-                            d='M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4'
-                          />
-                        </svg>
-                      </div>
+                    <Link href='/wordpress-seo/'>
+                      <a
+                        onClick={() => handleFlyoutMenu()}
+                        className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
+                        <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
+                          <svg
+                            className='h-6 w-6'
+                            xmlns='http://www.w3.org/2000/svg'
+                            fill='none'
+                            viewBox='0 0 24 24'
+                            stroke='currentColor'
+                            aria-hidden='true'>
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4'
+                            />
+                          </svg>
+                        </div>
 
-                      <MenuItem
-                        name='CARE'
-                        excerpt='White glove WordPress hosting & support.'
-                      />
-                    </a>
+                        <MenuItem
+                          name='CARE'
+                          excerpt='White glove WordPress hosting & support.'
+                        />
+                      </a>
+                    </Link>
+
                     <a
                       href='#'
                       className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
@@ -268,7 +271,7 @@ const Header = () => {
             <div className='mt-6'>
               <nav className='grid grid-cols-1 gap-7'>
                 <a
-                  href='#'
+                  href='/wordpress-seo/'
                   className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
                   <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-600 to-blue-800 text-white'>
                     {/* Heroicon name: outline/inbox */}

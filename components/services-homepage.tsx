@@ -1,13 +1,17 @@
 import Button from "./button";
 import Image from "next/image";
 
-const ServicesHomepage = () => {
+type Props = {
+  buttonClickFunc: Function;
+};
+
+const ServicesHomepage = ({ buttonClickFunc }: Props) => {
   return (
     <div
       className='relative bg-white pt-16 pb-32 overflow-hidden'
       id='more-info'>
       <div className='relative'>
-        <div className='lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24'>
+        <div className='lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24 lg:flex '>
           <div className='px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0'>
             <div>
               <div>
@@ -46,7 +50,11 @@ const ServicesHomepage = () => {
                   of your website to us.
                 </p>
                 <div className='mt-6'>
-                  <Button text='Learn About CARE' />
+                  <Button
+                    type='button'
+                    text='Learn About CARE'
+                    clickFunc={buttonClickFunc}
+                  />
                 </div>
               </div>
             </div>
@@ -80,13 +88,15 @@ const ServicesHomepage = () => {
               </blockquote>
             </div>
           </div>
-          <div className='mt-12 sm:mt-16 lg:mt-0'>
-            <div className='pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full'>
-              {/* <img
-                className='w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none'
+          <div className='lg:flex-shrink-0'>
+            <div className=''>
+              <Image
+                height='350px'
+                width='560px'
+                className='rounded-xl shadow-xl md:mt-32 sm:mt-4'
                 src='/assets/care.jpg'
                 alt='Inbox user interface'
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -104,9 +114,9 @@ const ServicesHomepage = () => {
                     viewBox='0 0 24 24'
                     stroke='white'>
                     <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='2'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
                       d='M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'
                     />
                   </svg>
