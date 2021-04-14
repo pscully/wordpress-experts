@@ -93,7 +93,7 @@ const Header = () => {
                 }>
                 <div className='rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden'>
                   <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2'>
-                    <Link href='/wordpress-seo/'>
+                    <Link href='/wordpress-services/managed-hosting/'>
                       <a
                         onClick={() => handleFlyoutMenu()}
                         className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
@@ -121,31 +121,34 @@ const Header = () => {
                       </a>
                     </Link>
 
-                    <a
-                      href='#'
-                      className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
-                        <svg
-                          className='h-6 w-6'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          aria-hidden='true'>
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth={2}
-                            d='M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z'
-                          />
-                        </svg>
-                      </div>
+                    <Link href='/wordpress-services/wordpress-seo/'>
+                      <a
+                        onClick={() => handleFlyoutMenu()}
+                        className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
+                        <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
+                          <svg
+                            className='h-6 w-6'
+                            xmlns='http://www.w3.org/2000/svg'
+                            fill='none'
+                            viewBox='0 0 24 24'
+                            stroke='currentColor'
+                            aria-hidden='true'>
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z'
+                            />
+                          </svg>
+                        </div>
 
-                      <MenuItem
-                        name='GROW'
-                        excerpt='Fully-loaded content marketing & SEO.'
-                      />
-                    </a>
+                        <MenuItem
+                          name='GROW'
+                          excerpt='Fully-loaded content marketing & SEO.'
+                        />
+                      </a>
+                    </Link>
+
                     <a
                       href='#'
                       className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
