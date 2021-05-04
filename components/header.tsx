@@ -148,75 +148,75 @@ const Header = () => {
                         />
                       </a>
                     </Link>
+                    <Link href='/wordpress-services/custom-development'>
+                      <a
+                        onClick={() => handleFlyoutMenu()}
+                        className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
+                        <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
+                          <svg
+                            className='h-6 w-6'
+                            xmlns='http://www.w3.org/2000/svg'
+                            fill='none'
+                            viewBox='0 0 24 24'
+                            stroke='currentColor'
+                            aria-hidden='true'>
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z'
+                            />
+                          </svg>
+                        </div>
 
-                    <a
-                      href='#'
-                      className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
-                        <svg
-                          className='h-6 w-6'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          aria-hidden='true'>
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth={2}
-                            d='M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z'
-                          />
-                        </svg>
-                      </div>
+                        <MenuItem
+                          name='WORK'
+                          excerpt='Custom web development (sites & biz tools).'
+                        />
+                      </a>
+                    </Link>
 
-                      <MenuItem
-                        name='WORK'
-                        excerpt='Custom web development (sites & biz tools).'
-                      />
-                    </a>
-                    <a
-                      href='#'
-                      className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
-                        <svg
-                          className='h-6 w-6'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          aria-hidden='true'>
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth={2}
-                            d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-                          />
-                        </svg>
-                      </div>
+                    <Link href='/wordpress-services/small-tasks/'>
+                      <a
+                        onClick={() => handleFlyoutMenu()}
+                        className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
+                        <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-blue-800 to-brand-blue text-white sm:h-12 sm:w-12'>
+                          <svg
+                            className='h-6 w-6'
+                            xmlns='http://www.w3.org/2000/svg'
+                            fill='none'
+                            viewBox='0 0 24 24'
+                            stroke='currentColor'
+                            aria-hidden='true'>
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+                            />
+                          </svg>
+                        </div>
 
-                      <MenuItem
-                        name='TASK'
-                        excerpt='One time WordPress tasks done in 48 hours.'
-                      />
-                    </a>
+                        <MenuItem
+                          name='TASK'
+                          excerpt='One time WordPress tasks done in 48 hours.'
+                        />
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
+            <Link href='/videos'>
+              <a className='text-base font-medium text-gray-500 hover:text-gray-900'>
+                Videos
+              </a>
+            </Link>
+
             <a
               href='#'
               className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Pricing
-            </a>
-            <a
-              href='#'
-              className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Partners
-            </a>
-            <a
-              href='#'
-              className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Company
+              Guides
             </a>
           </nav>
           <div className='hidden md:flex items-center justify-end md:flex-1 lg:w-0'>
@@ -234,7 +234,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* <div className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"> */}
       <div
         className={
           mobileMenuState
@@ -377,22 +376,22 @@ const Header = () => {
               <a
                 href='#'
                 className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                Pricing
+                Videos
               </a>
               <a
                 href='#'
                 className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                Partners
-              </a>
-              <a
-                href='#'
-                className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                Company
+                Guides
               </a>
               <a
                 href='#'
                 className='text-base font-medium text-gray-900 hover:text-gray-700'>
                 Contact
+              </a>
+              <a
+                href='#'
+                className='text-base font-medium text-gray-900 hover:text-gray-700'>
+                FB Group
               </a>
             </div>
             <div className='mt-6'>

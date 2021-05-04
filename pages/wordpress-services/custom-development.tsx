@@ -2,7 +2,7 @@ import Head from "next/head";
 import FAQ from "../../components/faq";
 import ServiceDetail from "../../components/service-detail";
 import ServiceCallToAction from "../../components/service-cta";
-import ServiceLongTextCare from "../../components/service-longtext-care";
+import ServiceLongTextGrow from "../../components/service-longtext-grow";
 import { fetchFAQs } from "../../lib/contentful";
 import CallToAction from "../../components/cta-section";
 
@@ -14,12 +14,14 @@ const Care = ({ faqs }: Props) => {
   return (
     <>
       <Head>
-        <title>Managed WordPress Services + Unlimited // Possible Web</title>
+        <title>
+          WordPress SEO Services + Content Marketing // Possible Web
+        </title>
       </Head>
       <ServiceDetail
-        service='CARE'
-        serviceName='White Glove WordPress CARE'
-        serviceOneLiner='Your website should not cause you headaches. Let our team shoulder the daily responsibilities of keeping your Wordpress website fast, sercure, and always up to date. Unlimited support tasks included. No one cares like us.'
+        service='WORK'
+        serviceName='Put Our Team to WORK With Custom Web Development'
+        serviceOneLiner='Our skilled developers are passionate about crafted web applications and site for small businesses that are smartly coded, easy to maintain, fast and modern, and most importantly valuable to your bottom line.'
       />
       <FAQ faqs={faqs} />
       <ServiceCallToAction
@@ -32,7 +34,7 @@ const Care = ({ faqs }: Props) => {
             tincidunt duis.'
         buttonText=' Visit the help center'
       />
-      <ServiceLongTextCare />
+      <ServiceLongTextGrow />
       <CallToAction />
     </>
   );

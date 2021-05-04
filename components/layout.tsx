@@ -13,7 +13,7 @@ const Layout = ({ preview, children }: Props) => {
     <>
       <Meta />
       <Header />
-      <Alert preview={preview} />
+      {/* <Alert preview={preview} /> */}
       <main>{children}</main>
       <Footer />
     </>

@@ -8,7 +8,12 @@ type Props = {
 const VideoLayout = ({ videoId, buttonClickFunc }: Props) => {
   return (
     <div className='bg-gray-300'>
-      <div className='flex justify-center px-4 py-5 sm:p-6'>
+      <div className=' px-4 py-5 sm:p-6 flex justify-center'>
+        <h2 className='text-xl font-bold'>
+          Watch This First! Then Click Learn More If You Like What You See!
+        </h2>
+      </div>
+      <div className='flex justify-center  px-4 py-5 sm:p-6'>
         <iframe
           width='560'
           height='315'
@@ -17,7 +22,7 @@ const VideoLayout = ({ videoId, buttonClickFunc }: Props) => {
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen></iframe>
-        <div className='p-5'>
+        <div className='p-5 flex lex-col'>
           <Button
             clickFunc={buttonClickFunc}
             text={
@@ -35,6 +40,7 @@ const VideoLayout = ({ videoId, buttonClickFunc }: Props) => {
                 />
               </svg>
             }></Button>
+          <Button clickFunc={buttonClickFunc} text='👍'></Button>
         </div>
       </div>
     </div>
