@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
   theme: {
     extend: {
       colors: {

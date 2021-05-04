@@ -1,5 +1,7 @@
 import Button from "./button";
+import Link from "./link";
 import Image from "next/image";
+import ServiceGraphic from "./service-graphic";
 
 type Props = {
   buttonClickFunc: Function;
@@ -50,10 +52,14 @@ const ServicesHomepage = ({ buttonClickFunc }: Props) => {
                   of your website to us.
                 </p>
                 <div className='mt-6'>
-                  <Button
+                  {/* <Button
                     type='button'
                     text='Learn About CARE'
                     clickFunc={buttonClickFunc}
+                  /> */}
+                  <Link
+                    text='Learn about CARE'
+                    href='wordpress-services/managed-hosting'
                   />
                 </div>
               </div>
@@ -88,15 +94,9 @@ const ServicesHomepage = ({ buttonClickFunc }: Props) => {
               </blockquote>
             </div>
           </div>
-          <div className='lg:flex-shrink-0'>
-            <div className=''>
-              <Image
-                height='350px'
-                width='560px'
-                className='rounded-xl shadow-xl md:mt-32 sm:mt-4'
-                src='/assets/care.jpg'
-                alt='Inbox user interface'
-              />
+          <div className='lg:flex-shrink-0 px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0'>
+            <div className='mt-10 -mx-4 relative lg:mt-0 lg:col-start-1'>
+              <ServiceGraphic service='care' />
             </div>
           </div>
         </div>
@@ -133,7 +133,11 @@ const ServicesHomepage = ({ buttonClickFunc }: Props) => {
                   continue to grow.
                 </p>
                 <div className='mt-6'>
-                  <Button text='Learn About Grow' />
+                  {/* <Button text='Learn About Grow' /> */}
+                  <Link
+                    text='Learn about GROW'
+                    href='wordpress-services/wordpress-seo'
+                  />
                 </div>
               </div>
             </div>
@@ -168,13 +172,9 @@ const ServicesHomepage = ({ buttonClickFunc }: Props) => {
               </blockquote>
             </div>
           </div>
-          <div className='mt-12 sm:mt-16 lg:mt-0 lg:col-start-1'>
-            <div className='pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full'>
-              {/* <img
-                className='w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none'
-                src='/assets/grow.jpg'
-                alt='Customer profile user interface'
-              /> */}
+          <div className='lg:flex-shrink-0 px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0'>
+            <div className='mt-10 relative lg:mt-0 lg:col-start-1'>
+              <ServiceGraphic service='grow' />
             </div>
           </div>
         </div>

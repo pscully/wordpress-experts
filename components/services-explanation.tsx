@@ -75,8 +75,8 @@ const ServicesExplanation = () => {
               heading='Reporting'
               text='Closely monitoring the metrics of your website is important. It
                 reveals new opportunities, and allows us to adapt quickly as
-                your traffic grows. GMB, Search Console, Analytics, Data Studio,
-                Optimize are all in our arsenal.'
+                your traffic grows. GMB, Search Console, Analytics, Tag Manager, Data Studio,
+                Optimize.'
             />
           </div>
         </div>

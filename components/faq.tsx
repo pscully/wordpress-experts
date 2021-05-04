@@ -1,4 +1,13 @@
-const FAQ = () => {
+type Props = {
+  faqs: object[];
+};
+
+type Faq = {
+  question: string;
+  answer: string;
+};
+
+const FAQ = ({ faqs }: Props) => {
   return (
     <div className='bg-white'>
       <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8'>
@@ -19,66 +28,18 @@ const FAQ = () => {
           </div>
           <div className='mt-12 lg:mt-0 lg:col-span-2'>
             <dl className='space-y-12'>
-              <div>
-                <dt className='text-lg leading-6 font-medium text-gray-900'>
-                  How do you make holy water?
-                </dt>
-                <dd className='mt-2 text-base text-gray-500'>
-                  You boil the hell out of it. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quas cupiditate laboriosam
-                  fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt className='text-lg leading-6 font-medium text-gray-900'>
-                  How do you make holy water?
-                </dt>
-                <dd className='mt-2 text-base text-gray-500'>
-                  You boil the hell out of it. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quas cupiditate laboriosam
-                  fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt className='text-lg leading-6 font-medium text-gray-900'>
-                  How do you make holy water?
-                </dt>
-                <dd className='mt-2 text-base text-gray-500'>
-                  You boil the hell out of it. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quas cupiditate laboriosam
-                  fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt className='text-lg leading-6 font-medium text-gray-900'>
-                  How do you make holy water?
-                </dt>
-                <dd className='mt-2 text-base text-gray-500'>
-                  You boil the hell out of it. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quas cupiditate laboriosam
-                  fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt className='text-lg leading-6 font-medium text-gray-900'>
-                  How do you make holy water?
-                </dt>
-                <dd className='mt-2 text-base text-gray-500'>
-                  You boil the hell out of it. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quas cupiditate laboriosam
-                  fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt className='text-lg leading-6 font-medium text-gray-900'>
-                  How do you make holy water?
-                </dt>
-                <dd className='mt-2 text-base text-gray-500'>
-                  You boil the hell out of it. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quas cupiditate laboriosam
-                  fugiat.
-                </dd>
-              </div>
+              {faqs.map((faq) => {
+                return (
+                  <div key={faqs.indexOf(faq)}>
+                    <dt className='text-lg leading-6 font-medium text-gray-900'>
+                      {faq.question}
+                    </dt>
+                    <dd className='mt-2 text-base text-gray-500'>
+                      {faq.answer}
+                    </dd>
+                  </div>
+                );
+              })}
             </dl>
           </div>
         </div>
