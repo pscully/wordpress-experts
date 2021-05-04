@@ -11,7 +11,7 @@ const CallToAction = () => {
           </span>
         </h2>
         <div className='mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5'>
-          <Button text='Get Started' />
+          {/* <Button text='Get Started' /> */}
         </div>
       </div>
     </div>
