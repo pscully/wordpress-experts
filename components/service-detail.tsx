@@ -11,11 +11,11 @@ const ServiceDetail = ({ serviceName, serviceOneLiner, service }: Props) => {
   return (
     <>
       {service === "CARE" ? (
-        <div className='bg-gradient-to-r from-blue-800 to-brand-blue h-auto'>
+        <div className='bg-gradient-to-r from-brand-blue to-gray-900 h-auto'>
           <div className='max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8'>
-            <h2 className='text-3xl font-extrabold text-white tracking-tight'>
+            <h1 className='text-7xl font-extrabold text-white tracking-tight'>
               {serviceName}
-            </h2>
+            </h1>
             <p className='mt-4 max-w-3xl text-lg text-purple-200'>
               {serviceOneLiner}
             </p>
@@ -32,11 +32,11 @@ const ServiceDetail = ({ serviceName, serviceOneLiner, service }: Props) => {
           </div>
         </div>
       ) : (
-        <div className='bg-gradient-to-r from-blue-800 to-brand-blue h-auto'>
+        <div className='bg-gradient-to-r from-brand-blue to-gray-900 h-auto'>
           <div className='max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8'>
-            <h2 className='text-3xl font-extrabold text-white tracking-tight'>
+            <h1 className='text-5xl md:text-7xl font-extrabold text-white tracking-tight'>
               {serviceName}
-            </h2>
+            </h1>
             <p className='mt-4 max-w-3xl text-lg text-purple-200'>
               {serviceOneLiner}
             </p>

@@ -14,12 +14,12 @@ const HeroHome = () => {
               alt='People working on laptops'
             />
             <div
-              className='absolute inset-0 bg-gray-700'
+              className='absolute inset-0 bg-gradient-to-r from-brand-blue to-gray-700'
               style={{ mixBlendMode: "multiply" }}
             />
           </div>
           <div className='relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8'>
-            <h1 className='text-center text-5xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl'>
+            <h1 className='text-center text-5xl font-extrabold tracking-tight sm:text-7xl lg:text-7xl'>
               <span className='block text-white'>No Stress WordPress</span>
               {/* <span className='block text-blue-200'>WordPress.</span> */}
             </h1>

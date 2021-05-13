@@ -124,7 +124,7 @@ const ServicesHomepage = ({ buttonClickFunc }: Props) => {
               </div>
               <div className='mt-6'>
                 <h2 className='text-3xl font-extrabold tracking-tight text-gray-900'>
-                  Grow with SEO
+                  Make search engines work for you
                 </h2>
                 <p className='mt-4 text-lg text-gray-500'>
                   Our unique SEO process gets you results fast. From hyper-local

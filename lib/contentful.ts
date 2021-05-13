@@ -6,16 +6,16 @@ const client = require('contentful').createClient({
   accessToken: accessToken,
 })
 
-export async function fetchFAQs(service: string) {
-  console.log("Running")
+async function fetchFilteredFAQs(topic: string) {
+  console.log("fetchFilteredFAQs Running")
+  const filter = "topic" + topic
   const entries = await client.getEntries({
-      content_type: 'faq'
+      content_type: 'faq',
+      'metadata.tags.sys.id[in]': filter
   })
   if (entries.items) {  
     const FaqsFilteredByService = entries.items.map(item => {
-        if ( item.fields['tag'] === service ) {
-            return item;
-        }
+        return item;
     })
 
     return FaqsFilteredByService;
@@ -23,5 +23,23 @@ export async function fetchFAQs(service: string) {
    console.log(`Error getting Entries for ${contentType.name}.`)
 }
 
-export default { fetchFAQs }
+async function fetchAllFAQs() {
+  console.log("fetchAllFAQs Running")
+  const entries = await client.getEntries({
+      content_type: 'faq'
+  })
 
+  console.log(entries.items.map(item => {
+    item.metadata.tags.map(each => {
+      const sys = each.sys
+      if (sys.id) {
+        console.log(sys.id)
+      }
+    })
+  }))
+
+  // entries ? entries :  console.log(`Error getting Entries for ${contentType.name}.`)
+
+}
+
+export {fetchAllFAQs, fetchFilteredFAQs};
